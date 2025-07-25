@@ -34,7 +34,7 @@ a {
     padding: 16px;
     height: 522px;
     max-width: 80%;
-    width: 327px;
+    width: 384px;
     border: 1px solid black;
     border-radius: 15px;
     box-shadow: 5px 5px 0 rgb(0 0 0);
@@ -65,8 +65,30 @@ a {
     
 }
 
+.card-content__category span{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.card-content__datum {
+    font-size: 0.9rem;
+    line-height: 150%; 
+}
+
+.card-content__title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 150%;
+}
+
 .card-content__title:hover {
     color: var(--background)
+}
+
+.card-content__description {
+    color: #6B6B6B;
+    font-size: 1rem;
+    line-height: 150%;
 }
 
 .card-content__author {
@@ -75,12 +97,31 @@ a {
     gap: var(--spacing-150);
 }
 
-.card-content__description {
-    color: #6B6B6B;
+.card-content__author img{
+    width: 2rem;
+    height: auto;
 }
+
+
 
 .author-name{
     
     font-weight: 700;
+}
+
+@media  screen and (max-width: 425px) {
+
+    .card{
+        max-height: 501px;
+        width: 327px;
+
+    }
+    .card-content__title {
+        font-size: 1.1rem;
+    }
+
+    .card-content__description {
+        font-size: 0.9rem;
+    }
 }
 
