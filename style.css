@@ -5,13 +5,17 @@
      --spacing-150: 0.75em;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    box-sizing: border-box;
     font-family: "Figtree", sans-serif;
     min-height: 100vh;
     background-color: var(--background);
-    
 }
 
 section{
@@ -19,7 +23,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 a {
@@ -27,36 +30,34 @@ a {
     color: black;
 }
 
-
 .card {
-    
     background-color: white;
-    padding: 16px;
-    height: 522px;
-    max-width: 80%;
+    padding: 1rem;
+    max-width: 90%;
     width: 384px;
     border: 1px solid black;
     border-radius: 15px;
     box-shadow: 5px 5px 0 rgb(0 0 0);
+    transition: box-shadow 0.2s ease;
 }
 
 .card:hover{
     box-shadow: 10px 10px 0 rgb(0 0 0);
 }
 
-.card:hover .card-content__title {
+.card:hover .card__title {
   color: var(--background);
 }
 
 
 
-.card-content img {
+.card__image {
     border-radius: 15px;
     width: 100%;
     height: auto;
 }
 
-.card-content__category{
+.card__category{
     background-color: var(--background);
     margin-top: 1rem;
     display: inline-block;
@@ -65,62 +66,54 @@ a {
     
 }
 
-.card-content__category span{
+.card__category span{
     font-size: 0.9rem;
     font-weight: 700;
 }
 
-.card-content__datum {
+.card__date {
     font-size: 0.9rem;
-    line-height: 150%; 
+    line-height: 1.5; 
 }
 
-.card-content__title {
+.card__title {
     font-size: 1.4rem;
     font-weight: 900;
-    line-height: 150%;
+    line-height: 1.5;
 }
 
-.card-content__title:hover {
-    color: var(--background)
-}
-
-.card-content__description {
+.card__description {
     color: #6B6B6B;
     font-size: 1rem;
-    line-height: 150%;
+    line-height: 1.5;
 }
 
-.card-content__author {
+.card__author {
     display: flex;
     align-items: center;
     gap: var(--spacing-150);
 }
 
-.card-content__author img{
+.card__author-avatar{
     width: 2rem;
     height: auto;
 }
 
-
-
-.author-name{
-    
+.card__author-name{
     font-weight: 700;
 }
 
-@media  screen and (max-width: 425px) {
-
+@media screen and (max-width: 425px) {
     .card{
-        max-height: 501px;
+        gap: 0.75rem;
         width: 327px;
-
     }
-    .card-content__title {
+    
+    .card__title {
         font-size: 1.1rem;
     }
 
-    .card-content__description {
+    .card__description {
         font-size: 0.9rem;
     }
 }

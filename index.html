@@ -8,36 +8,23 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
     <section>
       <article class="card">
-        <div class="card-content">
-          <img  src="./assets/images/illustration-article.svg" alt="illustration"/>
-        </div>
-        <div class="card-content__category">
+        <img class="card__image" src="./assets/images/illustration-article.svg" alt="illustration"/>
+        <div class="card__category">
           <span><a href="#">Learning</a></span>         
         </div>
-        <p class="card-content__datum">Published 21 Dec 2023</p>
-        <h1 class="card-content__title text-preset">HTML & CSS foundations</h1>
-        <p class="card-content__description">These languaes are the backbone of every website, defining structure, content, and presentation.</p>
-        <div class="card-content__author">
-          <img  src="assets/images/image-avatar.webp" alt="profile-picture"/>
-          <p class="author-name">Greg Hooper</p>
-
+        <p class="card__date">Published 21 Dec 2023</p>
+        <h1 class="card__title">HTML & CSS foundations</h1>
+        <p class="card__description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <div class="card__author">
+          <img class="card__author-avatar" src="./assets/images/image-avatar.webp" alt="profile-picture"/>
+          <p class="card__author-name">Greg Hooper</p>
         </div>
       </article>
-    
     </section>
-    
-  
-
-  
-
 </body>
 </html>
