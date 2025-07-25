@@ -2,6 +2,7 @@
 
 :root{
     --background: rgb(244, 208, 78);
+     --spacing-150: 0.75em;
 }
 
 body {
@@ -33,9 +34,18 @@ a {
     padding: 16px;
     height: 522px;
     max-width: 80%;
-    width: 384px;
-    border-radius: 10px;
+    width: 327px;
+    border: 1px solid black;
+    border-radius: 15px;
     box-shadow: 5px 5px 0 rgb(0 0 0);
+}
+
+.card:hover{
+    box-shadow: 10px 10px 0 rgb(0 0 0);
+}
+
+.card:hover .card-content__title {
+  color: var(--background);
 }
 
 
@@ -55,9 +65,14 @@ a {
     
 }
 
+.card-content__title:hover {
+    color: var(--background)
+}
+
 .card-content__author {
     display: flex;
     align-items: center;
+    gap: var(--spacing-150);
 }
 
 .card-content__description {
@@ -65,7 +80,7 @@ a {
 }
 
 .author-name{
-    margin-left: 10px;
+    
     font-weight: 700;
 }
 
