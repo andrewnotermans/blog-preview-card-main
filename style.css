@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --background: rgb(244, 208, 78);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    min-height: 100vh;
+    background-color: var(--background);
+    
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.card {
+    
+    background-color: white;
+    padding: 16px;
+    height: 522px;
+    max-width: 80%;
+    width: 384px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 rgb(0 0 0);
+}
+
+
+
+.card-content img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.card-content__category{
+    background-color: var(--background);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.card-content__author {
+    display: flex;
+    align-items: center;
+}
+
+.card-content__description {
+    color: #6B6B6B;
+}
+
+.author-name{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
